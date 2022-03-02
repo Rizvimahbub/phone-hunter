@@ -1,9 +1,11 @@
 // Search Part One start
 
 const searchPhone = () => {
-    const searchText = document.getElementById('input-text').value;  
+    const searchText = document.getElementById('input-text').value;
+    const emptyInput = document.getElementById('empty-input'); 
     if(searchText === ''){
       container.textContent = '';
+      emptyInput.textContent = '';
       document.getElementById('bttn').style.display = 'none';
       nativeToast({
         message: 'Please type an item name sir!!',
