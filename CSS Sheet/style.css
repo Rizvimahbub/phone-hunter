@@ -1,0 +1,45 @@
+/* Card Section start*/
+
+.card{
+    box-shadow:0px 0px 5px  black;
+}
+
+/* Card Section end*/
+
+/* All Button Section start*/
+
+#btn{
+    background-color: #d0ffe9;
+    color: black;
+    font-weight: bolder;
+    border: 3px solid #bcf8dc;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+#btn:hover{
+    background-color: #198754;
+    color: white;
+}
+
+/* All Button Section end*/
+
+/* See More Button Section start*/
+
+#button button{
+    display: none;
+    background-color: #d0ffe9;
+    color: black;
+    font-weight: bolder;
+    border: 3px solid #bcf8dc;
+    padding: 10px 25px;
+    border-radius: 10px;
+    
+}
+
+#bttn:hover{
+    background-color: #198754;
+    color: white;
+}
+
+/* See More Button Section end*/
