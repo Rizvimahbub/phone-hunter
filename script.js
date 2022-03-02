@@ -1,8 +1,10 @@
 const searchPhone = () => {
     const searchText = document.getElementById('input-text').value;  
     if(searchText === ''){
+      container.textContent = '';
+      document.getElementById('bttn').style.display = 'none';
       nativeToast({
-        message: 'Please type a item name sir!!',
+        message: 'Please type an item name sir!!',
         position: 'north',
         type : 'success',
         icon : false,
