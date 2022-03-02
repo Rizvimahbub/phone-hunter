@@ -1,3 +1,5 @@
+// Search Part One start
+
 const searchPhone = () => {
     const searchText = document.getElementById('input-text').value;  
     if(searchText === ''){
@@ -16,6 +18,10 @@ const searchPhone = () => {
         .then(json => displayPhone(json.data)) 
     }          
 }
+
+// Search Part One end
+
+// Display Part One start
 
 const displayPhone = (products) => {
   console.log(products)
@@ -68,10 +74,14 @@ const displayPhone = (products) => {
       </div>
       `;
       container.appendChild(div); 
-  })
-  document.getElementById('bttn').style.display = 'block';
+    })
+    document.getElementById('bttn').style.display = 'block';
   }  
-}
+};
+
+// Display Part One end
+
+// Detail Part  start
 
 
 const loadDetails = (data) => {
@@ -86,25 +96,27 @@ const displayDetails = (data) => {
   console.log(data)
   const modalBody = document.getElementById('modal-body');
   modalBody.innerHTML = `
-        <img class="w-25" src="${data.image}" alt="image">
-        <h4 class="mt-2">${data.name}</h4>
-        <h5>${data.brand}</h5>
-        <h6>Display : ${data.mainFeatures.displaySize}</h6>
-        <h6>Memory : ${data.mainFeatures.memory}</h6>
-        <h6>Chipset : ${data.mainFeatures.chipSet}</h6>
-        <h6>Storage : ${data.mainFeatures.storage}</h6>
-        <h6>Sensors : ${data.mainFeatures.sensors}</h6>
-        <h6>Bluetooth : ${data.others.Bluetooth}</h6>
-        <h6>GPS : ${data.others.GPS}</h6>
-        <h6>NFC : ${data.others.NFC}</h6>
-        <h6>Radio : ${data.others.Radio}</h6>
-        <h6>USB : ${data.others.USB}</h6>
-        <h6>WLAN : ${data.others.WLAN}</h6>
-        <h6>ReleaseDate : ${data.releaseDate}</h6>
-        
+    <img class="w-25" src="${data.image}" alt="image">
+    <h4 class="mt-2">${data.name}</h4>
+    <h5>${data.brand}</h5>
+    <h6>Display : ${data.mainFeatures.displaySize}</h6>
+    <h6>Memory : ${data.mainFeatures.memory}</h6>
+    <h6>Chipset : ${data.mainFeatures.chipSet}</h6>
+    <h6>Storage : ${data.mainFeatures.storage}</h6>
+    <h6>Sensors : ${data.mainFeatures.sensors}</h6>
+    <h6>Bluetooth : ${data.others.Bluetooth}</h6>
+    <h6>GPS : ${data.others.GPS}</h6>
+    <h6>NFC : ${data.others.NFC}</h6>
+    <h6>Radio : ${data.others.Radio}</h6>
+    <h6>USB : ${data.others.USB}</h6>
+    <h6>WLAN : ${data.others.WLAN}</h6>
+    <h6>ReleaseDate : ${data.releaseDate}</h6>      
   `;
 }
 
+// Detail Part  end
+
+// Search Part Two start
 
 const searchPhone2 = () => {
   const searchText = document.getElementById('input-text').value;
@@ -112,10 +124,13 @@ const searchPhone2 = () => {
         .then(response => response.json())
         .then(json => displayPhone2(json.data.slice(21,90)))
         document.getElementById('bttn').style.display = 'none';
-}
+};
 
-const displayPhone2 = (products) => {
-  
+// Search Part Two end
+
+// Display Part Two start
+
+const displayPhone2 = (products) => {  
   products.forEach(product => {
     const container = document.getElementById('container');
     div = document.createElement('div');
@@ -130,7 +145,8 @@ const displayPhone2 = (products) => {
       </div>
     </div>
     `;
-    container.appendChild(div);
-    
+    container.appendChild(div);  
   })
-}
+};
+
+// Display Part Two end
