@@ -112,7 +112,7 @@ const displayDetails = (data) => {
     <h6>Radio : ${data.others.Radio}</h6>
     <h6>USB : ${data.others.USB}</h6>
     <h6>WLAN : ${data.others.WLAN}</h6>
-    <h6>ReleaseDate : ${data.releaseDate}</h6>      
+    <h6>ReleaseDate : ${data.releaseDate?data.releaseDate:"Not available"}</h6>      
   `;
 }
 
