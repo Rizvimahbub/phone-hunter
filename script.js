@@ -22,10 +22,10 @@ const displayPhone = (products) => {
     container.textContent = '';
     div = document.createElement('div');
     div.innerHTML = `
-      <h1 class="fw-bolder text-center text-success">No result found sir</h1>
+      <h1 class="fw-bolder text-center text-success mt-5">No result found sir</h1>
     `;
     emptyInput.appendChild(div);
-    
+    document.getElementById('bttn').style.display = 'none';
   }
   else if(products.length < 20){
     container.textContent = '';
