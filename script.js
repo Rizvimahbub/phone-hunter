@@ -35,7 +35,7 @@ const displayPhone = (products) => {
       div = document.createElement('div');
       div.classList.add('col-md-4','col-12')
       div.innerHTML = `
-      <div class="card w-100 px-1 py-4" >
+      <div class="card w-100 ps-1 py-5" >
       <img src="${product.image}" class="card-img-top w-75" alt="image">
       <div class="card-body">
         <h4 class="card-title">${product.phone_name}</h4>
@@ -56,7 +56,7 @@ const displayPhone = (products) => {
       div = document.createElement('div');
       div.classList.add('col-md-4','col-12')
       div.innerHTML = `
-      <div class="card w-100 px-1 py-4" >
+      <div class="card w-100 py-5 ps-1" >
       <img src="${product.image}" class="card-img-top w-75" alt="image">
       <div class="card-body">
         <h4 class="card-title">${product.phone_name}</h4>
@@ -68,8 +68,7 @@ const displayPhone = (products) => {
       container.appendChild(div); 
   })
   document.getElementById('bttn').style.display = 'block';
-  } 
-  
+  }  
 }
 
 
@@ -120,7 +119,7 @@ const displayPhone2 = (products) => {
     div = document.createElement('div');
     div.classList.add('col-md-4','col-12')
     div.innerHTML = `
-    <div class="card w-100 px-1 py-4" >
+    <div class="card w-100 py-5 ps-1" >
     <img src="${product.image}" class="card-img-top w-75" alt="image">
     <div class="card-body">
       <h4 class="card-title">${product.phone_name}</h4>
